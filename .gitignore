@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/dotnet6-kafka/v17
+/.vs
+/ConsumerDemo/bin/Debug/net6.0
+/ConsumerDemo/obj
+/Core/bin/Debug/net6.0
+/Core/obj
+/Kafka.Consumer/bin/Debug/net6.0
+/Kafka.Consumer/obj
+/Kafka.Producer/bin/Debug/net6.0
+/Kafka.Producer/obj
+/ProducerDemo/bin/Debug/net6.0
+/ProducerDemo/obj
