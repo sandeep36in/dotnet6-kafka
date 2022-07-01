@@ -16,8 +16,14 @@ namespace ConsumerDemo
         {
             while (true)
             {
-                var obj = _subscriber.Consume(cancellationToken);
-                obj.Display();
+                try
+                {
+                    var obj = _subscriber.Consume(cancellationToken);
+                    obj.Display();
+                }
+                catch (Exception ex) { 
+                    Console.WriteLine(ex.ToString());
+                }
             }
             return Task.CompletedTask;
         }

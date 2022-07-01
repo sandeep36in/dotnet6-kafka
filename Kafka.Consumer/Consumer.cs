@@ -23,6 +23,8 @@ namespace Kafka.Subscriber
 
             _consumerBuilder = new ConsumerBuilder
                 <Ignore, string>(config).Build();
+
+            _consumerBuilder.Subscribe(_topic);
         }
 
         public T Consume(CancellationToken cancellationToken)
